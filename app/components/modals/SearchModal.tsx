@@ -6,7 +6,7 @@ import { useCallback, useMemo, useState } from 'react'
 import { Range } from 'react-date-range'
 import { formatISO } from 'date-fns'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { Suspense } from 'react'
+
 
 import useSearchModal from '@/app/hooks/useSearchModal'
 
@@ -183,7 +183,7 @@ const SearchModal = () => {
   }
 
   return (
-    <Suspense>
+    
     <Modal
       isOpen={searchModal.isOpen}
       title='Filters'
@@ -194,7 +194,7 @@ const SearchModal = () => {
       onClose={searchModal.onClose}
       body={bodyContent}
     />
-    </Suspense>
+    
   )
 }
 
